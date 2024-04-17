@@ -9,4 +9,57 @@ public class Sneaker {
     private int qty;
     private float price;
 
+    public Sneaker(int id, String name, String brand, String sport, int qty, float price) {
+        this.id = id;
+        this.name = name;
+        this.brand = brand;
+        this.sport = sport;
+        this.qty = qty;
+        this.price = price;
+    }
+
+    public Sneaker() {
+        //NOT SURE IF I NEED THIS CONSTRUCTOR
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setBrand(String brand){
+        this.brand = brand;
+    }
+    public String getBrand() {
+        return brand;
+    }
+
+    public void  setSport(String sport){
+        this.sport = sport;
+    }
+    public String getSport() {
+        return sport;
+    }
+    public void setQty(int qty){
+        this.qty = qty;
+    }
+    public int getQty() {
+        return qty;
+    }
+    public void setPrice(float price){
+        this.price = price;
+    }
+    public float getPrice() {
+        return price;
+    }
 }
