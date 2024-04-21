@@ -18,8 +18,11 @@ public class Sneaker {
         this.price = price;
     }
 
+    public Sneaker(int i, String name, String brand, String sport, int size, int qty, float price) {
+    }
+
     public Sneaker() {
-        //NOT SURE IF I NEED THIS CONSTRUCTOR
+
     }
 
     public void setName(String name){
@@ -61,5 +64,13 @@ public class Sneaker {
     }
     public float getPrice() {
         return price;
+    }
+
+    public void setSize(int size){
+        this.size = size;
+    }
+
+    public int getSize() {
+        return size;
     }
 }

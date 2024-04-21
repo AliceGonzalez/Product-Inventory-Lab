@@ -1,25 +1,23 @@
-import io.Console;
-import services.SneakerService;
+package io;
 
-import java.util.Scanner;
+
+import services.SneakerService;
+import services.WhiskeyService;
 
 public class App {
 
     //(1)
     private SneakerService sneakerService = new SneakerService();
+    private WhiskeyService whiskeyService = new WhiskeyService();
 
     public static void main(String... args){
-        App application = new App(); //(2)
-        application.init(); //(3)
+        App application = new App();
+        application.init();
     }
-
 
 
     public void init(){
-        //(4)calls method to take user input and iterface with services
         Console.printWelcome();
         Console.mainMenuSelector();
     }
-
-
 }

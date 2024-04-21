@@ -7,6 +7,7 @@ public class SneakerTests {
 //    This is our test data that we will compare to the actual values returned from the object.
 //    We create a new Sneaker object for testing. Then we invoke setName() passing in the test data.
 //    Retrieve the objects 'name' value with getName() and compare with the value that is expected.
+
     @Test
     public void setNameTest(){
         //given (1)
@@ -38,6 +39,6 @@ public class SneakerTests {
         Assert.assertEquals(expectedBrand, testSneaker.getBrand());
         Assert.assertEquals(expectedSport, testSneaker.getSport());
         Assert.assertEquals(expectedQty, testSneaker.getQty());
-        Assert.assertEquals(expectedPrice, testSneaker.getPrice());
+        Assert.assertEquals(expectedPrice, testSneaker.getPrice(), 0.001);
     }
 }
